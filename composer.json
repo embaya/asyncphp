@@ -1,0 +1,17 @@
+{
+    "name": "embaya/asyncphp",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "EMBAYA\\Models\\": "src/models",
+            "EMBAYA\\Services\\": "src/services",
+            "EMBAYA\\Infrastructure\\": "src/infrastructure"
+        }
+    },
+    "scripts": {
+        "booking-create": "EMBAYA\\Services\\BookingService::createBookingCmd"
+    },
+    "require": {
+        "monolog/monolog": "^2.1"
+    }
+}
